@@ -221,18 +221,6 @@
 			"revisionTime": "2016-10-13T08:27:11Z"
 		},
 		{
-			"checksumSHA1": "ahsGBflfbFW97SHVM0Sdcx6V6W8=",
-			"path": "go-careaxiom-utilities/authentication",
-			"revision": "d7df21abfc5334a455815a73b267eb28d4ae2da4",
-			"revisionTime": "2016-10-13T08:27:11Z"
-		},
-		{
-			"checksumSHA1": "tDCa+XvwAyp1EKGHtGIwU3wPkYc=",
-			"path": "go-careaxiom-utilities/filetransfer",
-			"revision": "1b9f4a6a3a83b22a07c40cb9618e9b8826b16134",
-			"revisionTime": "2016-10-14T07:28:36Z"
-		},
-		{
 			"checksumSHA1": "9jjO5GjLa0XF/nfWihF02RoH4qc=",
 			"path": "golang.org/x/net/context",
 			"revision": "8b4af36cd21a1f85a7484b49feb7c79363106d8e",
