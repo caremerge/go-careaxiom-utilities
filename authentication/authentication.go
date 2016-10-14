@@ -29,11 +29,9 @@ var oauthConfig = &oauth2.Config{}
 
 /*Parameters authentication parameters to use this package with multiple different projects*/
 type Parameters struct {
-	S3FileKey           string
-	LoginPageHTML       string
-	OAuthScopes         []string
-	BaseURL             string
-	CredentialsFileName string
+	LoginPageHTML string
+	OAuthScopes   []string
+	BaseURL       string
 }
 
 var parameters = Parameters{}
@@ -61,10 +59,15 @@ func saveToken(token *oauth2.Token) error {
 		return errors.New(errorText)
 	}
 	defer file.Close()
+	s3Folder := os.Getenv("AWS_S3_FOLDER")
+	credentialFileName := os.Getenv("CREDENTIALS_FILE_NAME")
+
+	if s3Folder == "" || credentialFileName == "" {
+		return errors.New("credential file name or folder key missing")
+	}
 	s3Writer := &filetransfer.S3IO{
 		Bucket: os.Getenv("AWS_S3_BUCKET"),
-		// Key:    "whats-for-lunch/lunch.credentials",
-		Key: parameters.S3FileKey,
+		Key:    s3Folder + "/" + credentialFileName,
 	}
 	writeError := json.NewEncoder(s3Writer).Encode(token)
 	if writeError != nil {
@@ -75,10 +78,17 @@ func saveToken(token *oauth2.Token) error {
 
 func loadToken() (*oauth2.Token, error) {
 	fmt.Println("loading token from file")
+
+	s3Folder := os.Getenv("AWS_S3_FOLDER")
+	credentialFileName := os.Getenv("CREDENTIALS_FILE_NAME")
+
+	if s3Folder == "" || credentialFileName == "" {
+		return nil, errors.New("credential file name or folder key missing")
+	}
 	s3Reader := &filetransfer.S3IO{
 		Bucket: os.Getenv("AWS_S3_BUCKET"),
 		// Key:    "whats-for-lunch/lunch.credentials",
-		Key: parameters.S3FileKey,
+		Key: s3Folder + "/" + credentialFileName,
 	}
 	token := &oauth2.Token{}
 	decodeErr := json.NewDecoder(s3Reader).Decode(token)
