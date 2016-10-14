@@ -222,6 +222,18 @@
 			"revisionTime": "2016-10-01T12:37:28Z"
 		},
 		{
+			"checksumSHA1": "omAtYoxgdSYJfv5u1MX8qPX40hE=",
+			"path": "github.com/umar-muneer/go-careaxiom-utilities/filetransfer",
+			"revision": "d7df21abfc5334a455815a73b267eb28d4ae2da4",
+			"revisionTime": "2016-10-13T08:27:11Z"
+		},
+		{
+			"checksumSHA1": "ahsGBflfbFW97SHVM0Sdcx6V6W8=",
+			"path": "go-careaxiom-utilities/authentication",
+			"revision": "d7df21abfc5334a455815a73b267eb28d4ae2da4",
+			"revisionTime": "2016-10-13T08:27:11Z"
+		},
+		{
 			"checksumSHA1": "tDCa+XvwAyp1EKGHtGIwU3wPkYc=",
 			"path": "go-careaxiom-utilities/filetransfer",
 			"revision": "1839ea7029c8f56a1b6354a7000a43b65fb21c06",
