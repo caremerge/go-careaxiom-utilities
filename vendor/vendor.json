@@ -215,13 +215,6 @@
 			"revisionTime": "2016-10-12T20:53:35Z"
 		},
 		{
-			"checksumSHA1": "0ZrwvB6KoGPj2PoDNSEJwxQ6Mog=",
-			"origin": "whats-for-lunch/vendor/github.com/jmespath/go-jmespath",
-			"path": "github.com/jmespath/go-jmespath",
-			"revision": "8ae6cf8e68222c3445e88dc804e95e95418c0b27",
-			"revisionTime": "2016-10-01T12:37:28Z"
-		},
-		{
 			"checksumSHA1": "omAtYoxgdSYJfv5u1MX8qPX40hE=",
 			"path": "github.com/umar-muneer/go-careaxiom-utilities/filetransfer",
 			"revision": "d7df21abfc5334a455815a73b267eb28d4ae2da4",
@@ -236,8 +229,8 @@
 		{
 			"checksumSHA1": "tDCa+XvwAyp1EKGHtGIwU3wPkYc=",
 			"path": "go-careaxiom-utilities/filetransfer",
-			"revision": "1839ea7029c8f56a1b6354a7000a43b65fb21c06",
-			"revisionTime": "2016-10-13T05:06:26Z"
+			"revision": "1b9f4a6a3a83b22a07c40cb9618e9b8826b16134",
+			"revisionTime": "2016-10-14T07:28:36Z"
 		},
 		{
 			"checksumSHA1": "9jjO5GjLa0XF/nfWihF02RoH4qc=",
@@ -340,12 +333,6 @@
 			"path": "google.golang.org/appengine/urlfetch",
 			"revision": "596d349602aa23355ff46ade49ebfeb99c0fc550",
 			"revisionTime": "2016-10-07T22:50:26Z"
-		},
-		{
-			"checksumSHA1": "t/q0/ZyBk+zDdsID4SsMbU1cwek=",
-			"path": "whats-for-lunch/filetransfer",
-			"revision": "8ae6cf8e68222c3445e88dc804e95e95418c0b27",
-			"revisionTime": "2016-10-01T12:37:28Z"
 		}
 	],
 	"rootPath": "go-careaxiom-utilities"
